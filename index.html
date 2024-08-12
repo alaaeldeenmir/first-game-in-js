@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X & O Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="winn-none">
+        <span class="winnchild"></span>
+    </div>
+    <div class="warnning">
+        This Game can't be played in small screen devices, Try open it in another Phone or device.
+    </div>
+    <section class="player-1 m small">
+        <div class="container">
+            <div class="player-1-m">
+                <img src="Set/peep-89.svg" class="player-pic">
+                <div>
+                    <h2>Oppoenment</h2>
+                    <h4>Winning :0</h4>
+                </div>
+                <div class="p-1-turn"></div>
+            </div>
+        </div>
+    </section>
+    <section class="players-role d small">
+        <div class="container">
+            <div class="role-box">
+                <div class="p-1">
+                    <div class="p-1-t"></div>
+                    <img src="Set/peep-89.svg" class="p-1-pic">
+                    <div>
+                        <h2>Oppoenment</h2>
+                        <h4>Winning :0</h4>
+                    </div>
+                    
+                </div>
+                <div class="p-2">
+                    
+                    <div>
+                        <h2>You</h2>
+                        <h4>Winning :0</h4>
+                    </div>
+                    <img src="Set/peep-99.svg" class="p-2-pic">
+                    <div class="p-2-t"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="grid-box small">
+        <div class="box" onclick="clickBox(this)"><span class="item"> </span readonly></div>
+        <div class="box" onclick="clickBox(this)"><span class="item"> </span readonly></div>
+        <div class="box" onclick="clickBox(this)"><span class="item"> </span readonly></div>
+        <div class="box" onclick="clickBox(this)"><span class="item"> </span readonly></div>
+        <div class="box" onclick="clickBox(this)"><span class="item"> </span readonly></div>
+        <div class="box" onclick="clickBox(this)"><span class="item"> </span readonly></div>
+        <div class="box" onclick="clickBox(this)"><span class="item"> </span readonly></div>
+        <div class="box" onclick="clickBox(this)"><span class="item"> </span readonly></div>
+        <div class="box" onclick="clickBox(this)"><span class="item"> </span readonly></div>
+    </section>
+    <section class="player-2 m small">
+        <div class="container">
+            <div class="player-2-m">
+                <div class="p-2-turn"></div>
+                <div>
+                    <h2>You</h2>
+                    <h4>Winning :0</h4>
+                </div>
+                <img src="Set/peep-99.svg" class="player-pic">
+            </div>
+        </div>
+    </section>
+    <section class="dices"></section>
+    <button type="button" class="play small" onclick="play()">Play</button>
+    <div class="guess-hidden">
+        <div class="g-box">
+            <div class="g-1">
+                <img src="Set/peep-89.svg" class="g-1-pic">
+                <img src="Set/dice-1.svg" class="g-1-dice">
+            </div>
+            <div class="g-2">
+                <img src="Set/dice-1.svg" class="g-2-dice">
+                <img src="Set/peep-99.svg" class="g-2-pic">
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
